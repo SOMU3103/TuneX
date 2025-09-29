@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneX - Premium Music Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- For modern browsers -->
+    <link rel="icon" type="image/svg+xml" href="imag/favicon.svg">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#4cc9f0">
+</head>
+<body>
+    <!-- Download Progress Overlay -->
+    <div class="download-overlay" id="downloadOverlay"></div>
+    <div class="download-progress" id="downloadProgress">
+        <div class="download-spinner"></div>
+        <p class="download-text">Downloading...</p>
+        <div class="download-percent" id="downloadPercent">0%</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="imag/logo.png" alt="TuneX Logo">
+                <span>TuneX</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+                    <li><a href="#features" onclick="closeMobileMenu()">Features</a></li>
+                    <li><a href="#download" onclick="closeMobileMenu()">Download</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <section  id="video" class="video-section">
+        <div class="container">
+            <div class="video-container scroll-animate">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/WlGtbF3muhA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-content">
+                    <h2>Your Ultimate <span class="accent-text">Music Companion</span></h2>
+                    <p>Every note, every beat, pure perfection. TuneX delivers crystal-clear audio that transforms your favorite songs into unforgettable listening experiences. Enjoy premium sound quality across all your favorite music.</p>
+                    <div class="app-description">
+                        <h3>What is TuneX?</h3>
+                        <p>TuneX is an all in one music app that lets you download YouTube videos as MP3 files, play your favorite tracks, and enjoy them completely offline. Best of all, TuneX is 100% ads free so your music plays without interruptions.</p>
+                    </div>
+                    <a href="#download" class="video-cta">Start Listening Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>TuneX</h1>
+            <p>TuneX is for personal use only. The developers are not responsible for any issues or misuse. Users are fully responsible for ensuring that downloading YouTube audio complies with the Terms of Service and copyright laws.</p>
+            <a href="#download" class="cta-button">Download Now</a>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content scroll-animate">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <h2>About <span class="accent-text">TuneX</span></h2>
+                    <p>TuneX was created to give music lovers complete freedom in their listening experience. Our application provides a fully ad free environment where your music plays without any interruptions.</p>
+                    <p>We believe everyone deserves to enjoy their favorite songs without distractions, which is why TuneX is completely free with no hidden costs or annoying advertisements.</p>
+                    <p>Every feature in TuneX is designed to put your music first, offering pure, uninterrupted listening that lets you focus on what matters most the music you love.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><span class="accent-text">Powerful</span> Features</h2>
+            <div class="features-grid">
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">⬇️</div>
+                    <h3>YouTube Downloader</h3>
+                    <p>Download multiple YouTube audio simultaneously with our new v2.0 batch processor. Queue unlimited URLs and track progress in real-time.</p>
+                </div>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Advanced Music Player</h3>
+                    <p>Play all popular audio formats including MP3, WAV, FLAC, and more with playlist management and search functionality.</p>
+                </div>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Smart Playback Controls</h3>
+                    <p>Enjoy shuffle, repeat modes, progress seeking, volume control, and keyboard shortcuts for seamless music experience.</p>
+                </div>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">📁</div>
+                    <h3>Playlist Management</h3>
+                    <p>Create, save, and load playlists in M3U format with duplicate detection, sorting, and export capabilities.</p>
+                </div>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Enhanced Performance</h3>
+                    <p>Faster downloads, improved audio quality, and better stability with the latest TuneX v2.1 update.</p>
+                </div>
+                <div class="feature-card scroll-animate">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Completely Ad-Free</h3>
+                    <p>100% free application with no advertisements, hidden costs, or interruptions - just pure music enjoyment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Download Instructions Section -->
+    <section id="instructions" class="instructions-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Download <span class="accent-text">Instructions</span></h2>
+            <p class="instructions-subtitle scroll-animate">Follow these simple steps to get TuneX up and running on your device</p>
+            
+            <div class="instructions-container">
+                <div class="instruction-step scroll-animate">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install FFmpeg</h3>
+                        <p>FFmpeg is required for TuneX to work properly. Follow these steps:</p>
+                        <ol>
+                            <li>Click this link: <a href="https://github.com/BtbN/FFmpeg-Builds/releases" target="_blank" class="step-link">FFmpeg Releases</a></li>
+                            <li>Download the Windows version (ffmpeg-master-latest-win64-gpl-shared.zip)</li>
+                            <li>Extract the ZIP file to a location like C:\FFmpeg</li>
+                            <li>Copy the path to the "bin" folder (e.g., C:\FFmpeg\bin)</li>
+                            <li>Add this path to your system's Environment Variables</li>
+                        </ol>
+                        <div class="step-note">
+                            <span class="note-icon">💡</span>
+                            <span>FFmpeg is essential for audio processing in TuneX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instruction-step scroll-animate">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Download TuneX</h3>
+                        <p>Click the download button for your preferred version. The download will start automatically.</p>
+                        <div class="step-note">
+                            <span class="note-icon">💡</span>
+                            <span>Choose v2.1 for the latest features or v1.0 for basic functionality</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instruction-step scroll-animate">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Install the Application</h3>
+                        <p>Locate the downloaded file and run the installer. Follow the on-screen instructions to complete installation.</p>
+                        <div class="step-note">
+                            <span class="note-icon">⚠️</span>
+                            <span>Make sure to allow the installer if your system asks for permission</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instruction-step scroll-animate">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Launch TuneX</h3>
+                        <p>Find TuneX in your applications or start menu and open it. The app is ready to use immediately.</p>
+                        <div class="step-note">
+                            <span class="note-icon">🚀</span>
+                            <span>No registration or account creation required. Enjoy your music!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="support-section scroll-animate">
+                <h3>Need More Help?</h3>
+                <p>Having trouble with the installation? Watch our detailed setup video for step-by-step instructions.</p>
+                <a href="#video" class="support-button">Watch Setup Video</a>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Download <span class="accent-text">TuneX</span></h2>
+            <div class="version-container">
+                <div class="version-card scroll-animate">
+                    <h3 class="version-title">Version 1.0</h3>
+                    <p class="version-description">The original TuneX with essential YouTube downloading and music playback features.</p>
+                    <ul class="version-features">
+                        <li>Single YouTube MP3 downloads</li>
+                        <li>Basic music player with playlist support</li>
+                        <li>Multiple audio format support (MP3, WAV, FLAC)</li>
+                        <li>Simple dark theme interface</li>
+                        <li>Continuous playback mode</li>
+                        <li>Volume control and basic playback</li>
+                    </ul>
+                    <button class="download-btn" onclick="downloadVersion('v1', this)">Download v1.0</button>
+                </div>
+                <div class="version-card scroll-animate">
+                    <h3 class="version-title">Version 2.1</h3>
+                    <p class="version-description">Enhanced TuneX with batch downloading and advanced music management features.</p>
+                    <ul class="version-features">
+                        <li><strong>Batch YouTube Downloader</strong> - Download multiple URLs</li>
+                        <li>Real-time download progress tracking</li>
+                        <li>Enhanced music player with search</li>
+                        <li>Shuffle and repeat modes</li>
+                        <li>Playlist management (save/load M3U)</li>
+                        <li>Duplicate track detection</li>
+                        <li>Progress seeking and volume control</li>
+                        <li>Modern dark interface with larger fonts</li>
+                        <li>Keyboard shortcuts support</li>
+                        <li>Settings persistence</li>
+                    </ul>
+                    <button class="download-btn" onclick="downloadVersion('v2', this)">Download v2.1</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section footer-left">
+                    <h3>TuneX</h3>
+                    <p style="color: #cccccc; margin-bottom: 20px;">Premium music experience for discerning listeners</p>
+                    <p style="color: #888; font-size: 0.9rem;">Bringing you the ultimate audio experience with cutting edge technology and elegant design.</p>
+                </div>
+                <div class="footer-section footer-right">
+                    <h3>Follow <span class="accent-text">Us</span></h3>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@S.o.m.u007" class="social-link" title="YouTube">
+                            <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube" width="24" height="24">
+                        </a>
+                        <a href="https://www.linkedin.com/in/somnath312006" class="social-link" title="LinkedIn">
+                            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="24" height="24">
+                        </a>
+                        <a href="https://instagram.com/somu_yt_007" class="social-link" title="Instagram">
+                            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="https://github.com/somu3103" class="social-link" title="GitHub">
+                            <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> TuneX. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
