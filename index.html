@@ -24,12 +24,10 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="#home" style="text-decoration: none; color: inherit;">
-                <div class="logo">
-                    <img src="imag/logo.png" alt="TuneX Logo">
-                    <span>TuneX</span>
-                </div>
-            </a>
+            <div class="logo">
+                <img src="imag/logo.png" alt="TuneX Logo">
+                <span>TuneX</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -49,7 +47,7 @@
     </header>
 
     <!-- Video Section -->
-    <section  id="video" class="video-section">
+    <section id="video" class="video-section">
         <div class="container">
             <div class="video-container scroll-animate">
                 <div class="video-wrapper">
@@ -210,6 +208,7 @@
                 <h3>Need More Help?</h3>
                 <p>Having trouble with the installation? Watch our detailed setup video for step-by-step instructions.</p>
                 <a href="#video" class="support-button">Watch Setup Video</a>
+            </div>
         </div>
     </section>
 
@@ -219,11 +218,28 @@
     <!-- Download Section -->
     <section id="download" class="download-section">
         <div class="container">
-            <h2 class="section-title scroll-animate">Download <span class="accent-text">TuneX</span></h2>
+            <h2 class="section-title">Download <span class="accent-text">TuneX</span></h2>
+            <p class="download-subtitle">Choose the version that fits your needs</p>
+
+            <div class="download-notice">
+                <div class="notice-icon">💡</div>
+                <div class="notice-content">
+                    <h4>Before You Download</h4>
+                    <p>Make sure to install FFmpeg first for TuneX to work properly.</p>
+                </div>
+            </div>
+            
             <div class="version-container">
-                <div class="version-card scroll-animate">
-                    <h3 class="version-title">Version 1.0</h3>
-                    <h3>FFmpeg is required for installation</h3>
+                <!-- Version 1.0 -->
+                <div class="version-card">
+                    <div class="version-header">
+                        <h3 class="version-title">TuneX Basic</h3>
+                        <div class="version-badge">v1.0</div>
+                    </div>
+                    <div class="version-requirement">
+                        <span class="requirement-icon">⚠️</span>
+                        <span>FFmpeg Required</span>
+                    </div>
                     <p class="version-description">The original TuneX with essential YouTube downloading and music playback features.</p>
                     <ul class="version-features">
                         <li>Single YouTube MP3 downloads</li>
@@ -233,11 +249,24 @@
                         <li>Continuous playback mode</li>
                         <li>Volume control and basic playback</li>
                     </ul>
-                    <button class="download-btn" onclick="downloadVersion('v1', this)">Download v1.0</button>
+                    <div class="version-footer">
+                        <button class="download-btn" onclick="downloadVersion('v1', this)">
+                            <span class="btn-text">Download v1.0</span>
+                            <span class="btn-icon">⬇️</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="version-card scroll-animate">
-                    <h3 class="version-title">Version 2.1</h3>
-                    <h3>FFmpeg is required for installation</h3>
+                
+                <!-- Version 2.1 -->
+                <div class="version-card">
+                    <div class="version-header">
+                        <h3 class="version-title">TuneX Pro</h3>
+                        <div class="version-badge">v2.1</div>
+                    </div>
+                    <div class="version-requirement">
+                        <span class="requirement-icon">⚠️</span>
+                        <span>FFmpeg Required</span>
+                    </div>
                     <p class="version-description">Enhanced TuneX with batch downloading and advanced music management features.</p>
                     <ul class="version-features">
                         <li><strong>Batch YouTube Downloader</strong> - Download multiple URLs</li>
@@ -251,7 +280,37 @@
                         <li>Keyboard shortcuts support</li>
                         <li>Settings persistence</li>
                     </ul>
-                    <button class="download-btn" onclick="downloadVersion('v2', this)">Download v2.1</button>
+                    <div class="version-footer">
+                        <button class="download-btn" onclick="downloadVersion('v2', this)">
+                            <span class="btn-text">Download v2.1</span>
+                            <span class="btn-icon">⬇️</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Version 3.0 -->
+                <div class="version-card">
+                    <div class="version-header">
+                        <h3 class="version-title">TunexYT Download Not for Music</h3>
+                        <div class="version-badge">v1.0</div>
+                    </div>
+                    <div class="version-requirement">
+                        <span class="requirement-icon">⚠️</span>
+                        <span>No need FFmpeg</span>
+                    </div>
+                    <p class="version-description">TunexYT Extract audio or download full video</p>
+                    <ul class="version-features">
+                        <li><strong>Download video or audio</strong>One solution for downloading both video and audio</li>
+                        <li>Separate options for video and audio</li>
+                        <li>Advanced downloading features</li>
+                        <li>All in one solution</li>
+                    </ul>
+                    <div class="version-footer">
+                        <button class="download-btn" onclick="downloadVersion('v3', this)">
+                            <span class="btn-text">Download v1.0</span>
+                            <span class="btn-icon">⬇️</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

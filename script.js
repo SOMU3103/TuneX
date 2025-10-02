@@ -61,17 +61,20 @@ function downloadVersion(version, button) {
     // File URLs - UPDATE THESE WITH YOUR ACTUAL FILE PATHS
     const fileUrls = {
         'v1': 'main/TuneX_v1.zip', // Path to your v1.0 file
-        'v2': 'main/TuneX_v2.zip'  // Path to your v2.1 file
+        'v2': 'main/TuneX_v2.zip', // Path to your v2.1 file
+        'v3': 'main/TunexYT.zip'  // Path to your v3.0 file
     };
     
     const versionNames = {
         'v1': 'Version 1.0',
-        'v2': 'Version 2.1'
+        'v2': 'Version 2.1',
+        'v3': 'Version 3.0'
     };
 
     // Add downloading class to button
     button.classList.add('downloading');
-    button.textContent = 'Downloading...';
+    const originalText = button.querySelector('.btn-text').textContent;
+    button.querySelector('.btn-text').textContent = 'Downloading...';
     
     // Show progress modal
     overlay.classList.add('active');
@@ -101,7 +104,7 @@ function downloadVersion(version, button) {
                     percentText.textContent = '0%';
                     downloadText.textContent = 'Downloading...';
                     button.classList.remove('downloading');
-                    button.textContent = version === 'v1' ? 'Download v1.0' : 'Download v2.1';
+                    button.querySelector('.btn-text').textContent = originalText;
                 }, 300);
                 
                 // ACTUAL FILE DOWNLOAD
@@ -134,5 +137,10 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
-// Automatically display current year
-document.getElementById('current-year').textContent = new Date().getFullYear();
+// ===== AUTOMATICALLY DISPLAY CURRENT YEAR =====
+document.addEventListener('DOMContentLoaded', function() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
