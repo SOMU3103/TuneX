@@ -68,7 +68,7 @@ function downloadVersion(version, button) {
     const versionNames = {
         'v1': 'Version 1.0',
         'v2': 'Version 2.1',
-        'v3': 'Version 3.0'
+        'v3': 'Version 1.0'
     };
 
     // Add downloading class to button
