@@ -2,6 +2,10 @@
 
 <br/>
 
+<img src="imag/logo.png" alt="TuneX Logo" width="130" height="130"/>
+
+<br/><br/>
+
 # 🎵 TuneX
 ## *Premium Music Experience*
 
@@ -63,11 +67,13 @@ TuneX comes in **three editions** — from a lightweight Mini build all the way 
 
 <br/>
 
-[![▶️ Watch Full Demo](https://img.shields.io/badge/▶️%20Watch%20Full%20Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://somu3103.github.io/TuneX)
+[![▶️ Watch Full Demo](https://img.shields.io/badge/▶️%20Watch%20Full%20Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](#)
 &nbsp;&nbsp;&nbsp;
-[![🌐 Watch Full Demo](https://img.shields.io/badge/🌐%20Visit%20Website-blueviolet?style=for-the-badge&logoColor=white)](https://somu3103.github.io/TuneX)
+[![🌐 Visit Website](https://img.shields.io/badge/🌐%20Visit%20Website-blueviolet?style=for-the-badge&logoColor=white)](https://somu3103.github.io/TuneX)
 
 <br/>
+
+> 🎥 *Full project walkthrough video uploading soon — stay tuned!*
 
 </div>
 
