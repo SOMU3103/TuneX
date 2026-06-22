@@ -210,91 +210,68 @@ nav {
     background: linear-gradient(90deg, transparent, rgba(76, 201, 240, 0.5), transparent);
 }
 
-/* ===== VIDEO SECTION - COMPACT ===== */
-.video-section {
-    padding: 60px 0 40px;
-    background: linear-gradient(135deg, rgba(10, 10, 20, 0.95) 0%, rgba(26, 26, 46, 0.95) 100%);
-    margin-top: 70px;
-}
-
-.video-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+/* ===== TUNEX BRAND DISPLAY  ===== */
+.tunex-brand-display {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.video-wrapper {
-    position: relative;
+    justify-content: center;
+    background: rgba(76, 201, 240, 0.05);
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(76, 201, 240, 0.3);
     border: 2px solid rgba(76, 201, 240, 0.3);
-    padding-bottom: 56.25%;
-    height: 0;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 300px;
+    box-shadow: 0 8px 20px rgba(76, 201, 240, 0.15);
 }
 
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+.brand-logo {
+    height: 100px;
+    width: auto;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 4px 12px rgba(76, 201, 240, 0.5));
+    animation: floatLogo 3s ease-in-out infinite;
 }
 
-.video-content {
-    padding: 10px;
+@keyframes floatLogo {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
 }
 
-.video-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    line-height: 1.2;
-}
-
-.video-content h2 .accent-text {
-    color: #4cc9f0;
-}
-
-.video-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: #ffffff;
-}
-
-.video-content p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #cccccc;
-    margin-bottom: 8px;
-}
-
-.app-description {
-    margin: 15px 0;
-}
-
-.video-cta {
-    background: linear-gradient(45deg, #4cc9f0, #4361ee);
-    color: #ffffff;
-    padding: 8px 20px;
-    font-size: 0.9rem;
+.brand-name {
+    font-size: 2.4rem;
     font-weight: bold;
-    border: none;
-    border-radius: 18px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-    margin-top: 8px;
+    color: #4cc9f0;
+    text-shadow: 0 0 20px rgba(76, 201, 240, 0.4);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
 }
 
-.video-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(76, 201, 240, 0.4);
+.brand-tagline {
+    font-size: 0.95rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
+
+.brand-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.brand-badge {
+    background: rgba(76, 201, 240, 0.1);
+    border: 1px solid rgba(76, 201, 240, 0.3);
+    color: #4cc9f0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 
 /* ===== HERO SECTION - COMPACT ===== */
 .hero {
@@ -1093,4 +1070,17 @@ footer {
     .about-section, .features, .instructions-section, .download-section {
         padding: 50px 0;
     }
+    /* Responsive for brand display */
+@media (max-width: 768px) {
+    .tunex-brand-display {
+        min-height: 220px;
+        padding: 30px 15px;
+    }
+    .brand-logo {
+        height: 70px;
+    }
+    .brand-name {
+        font-size: 1.8rem;
+    }
+}
 }
